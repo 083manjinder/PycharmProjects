@@ -9,7 +9,6 @@ from sqlalchemy.orm import relationship
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
 from flask_gravatar import Gravatar
-from wtforms import Form, BooleanField, StringField, PasswordField, validators
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6OffsfsfsfsfXox7C0sKR6b'
@@ -221,4 +220,4 @@ def delete_post(post_id):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
